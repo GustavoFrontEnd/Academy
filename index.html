@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Academy</title>
+    
+    <!-- Icones -->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+        
+    <div class="navbar-container">
+        
+        <!-- barra de navegação -->
+        
+        <nav>           
+            <a href="#">
+                <img class="logo" src="assets/logo2.avif" alt="Academy" >
+            </a>
+            
+            <ul class="navbar-items">
+                <li>
+                    <a href="#">home</a>
+                </li>
+                <li>
+                    <a href="#precos">preços</a>
+                </li>
+                <li>
+                    <a href="#contatos">contatos</a>
+                </li>
+                <li>
+                    <a href="#" id="default-btn">entrar</a>
+                </li>
+            </ul>
+        </nav>
+    </div>    
+        
+    <!-- Conteudo principal da pagina -->
+        
+        <main>
+        <div class="main-banner">
+            
+                <h1>Academy</h1>
+                <p>
+                    A melhor academia da região!
+                </p>
+        </div>   
+            
+            <!-- secao de beneficios -->
+            
+            <section class="services-container">
+                <ul>
+                    <li>
+                        <i class="fas fa-heart" aria-hidden="true"></i>
+                        <h3>Saúde</h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque repudiandae perspiciatis dignissimos obcaecati ullam repellendus consequuntur, laudantium, facilis laboriosam tempore exercitationem voluptatem blanditiis nobis ipsam iste assumenda labore fugit quis?
+                        </p>
+                    </li>
+                    <li>
+                        <i class="fas fa-rocket"></i>
+                        <h3>Performance</h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque repudiandae perspiciatis dignissimos obcaecati ullam repellendus consequuntur, laudantium, facilis laboriosam tempore exercitationem voluptatem blanditiis nobis ipsam iste assumenda labore fugit quis?
+                        </p>
+                    </li>
+                    <li>
+                        <i class="fas fa-comments"></i>
+                        <h3>Suporte 24hrs</h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque repudiandae perspiciatis dignissimos obcaecati ullam repellendus consequuntur, laudantium, facilis laboriosam tempore exercitationem voluptatem blanditiis nobis ipsam iste assumenda labore fugit quis?
+                        </p>
+                    </li>
+                </ul>
+            </section>
+        
+            <!-- Secao de planos -->
+            
+            <section class="pricing-container" id="precos">
+                <h2>Planos e Preços</h2>
+                <p>Conheça nossos planos e venha fazer parte da Academy!!!</p>
+            <div class="plans-container">    
+                <div class="plan">
+                    <ul>
+                        <li class="price">R$79,99/mês</li>
+                        <li class="plan-name">AcademyBasic</li>
+                        <li>Área de musculação e aeróbicos</li>
+                        <li>1 ano de fidelidade</li>
+                        <li>Acesso em 1 unidade</li>                       
+                        <input 
+                        type="submit" 
+                        class="plan-btn"  
+                        value="MATRICULE-SE">
+                    </ul>
+                </div>
+                <div class="plan-recommended">
+                    <ul>
+                        <li class="price">R$115,00/mês</li>
+                        <li class="plan-name">AcademySilver</li>
+                        <li>Área de musculação e aeróbicos</li>
+                        <li>6 meses de fidelidade</li>
+                        <li>Acesso em 3 unidades Academy</li>
+                        <li>Acesso ilimitado ao nosso app</li>
+                        <input 
+                        type="submit" 
+                        class="plan-btn"  
+                        value="MATRICULE-SE">
+                    </ul>
+                </div>
+                <div class="plan">
+                    <ul>
+                        <li class="price">R$150,00/mês</li>
+                        <li class="plan-name">AcademyGold</li>
+                        <li>Área de musculação e aeróbicos</li>
+                        <li>Sem fidelidade</li>
+                        <li>Acesso em qualquer unidade Academy</li>
+                        <li>Acesso ilimitado ao nosso app</li>
+                        <li>Renovação do plano automática</li>
+                        <input 
+                        type="submit" 
+                        class="plan-btn"  
+                        value="MATRICULE-SE">
+                    </ul>   
+                </div>
+            </div>    
+            </section>
+            
+            <!--  Secao de contatos -->
+            
+            <section class="contact-container" id="contatos">
+                <h2>Tire sua dúvida conosco</h2>
+                <p>Envie a sua mensagem e nossos professores iram te atender em menos de 24hrs!!!</p>
+                <form class="form-contact">
+                    <input 
+                    type="text" 
+                    name="name" 
+                    id="name" 
+                    placeholder="Nome"
+                    required>
+                    
+                    <input 
+                    type="email" 
+                    name="email" 
+                    id="email" 
+                    placeholder="Email"
+                    required>
+                    
+                    <textarea 
+                    name="message" 
+                    id="message" 
+                    placeholder="Mande sua dúvida"
+                    required></textarea>
+                    
+                    <input 
+                    type="submit"
+                    id="enviar" 
+                    value="enviar">
+                </form>
+            </section>           
+        </main> <!-- finalizacao do main -->
+        
+        
+        
+        <!-- footer (rodapé do site) -->
+        
+        <footer>
+            <p>Academy @ 2023</p>
+        </footer>
+</body>
+</html>
